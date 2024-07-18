@@ -68,6 +68,8 @@ git clone --depth=1 https://ghproxy.com/https://github.com/hubhike/Magisk-FRPC
 
 然后再使用上述脚本帮助来构建 ZIP 文件，测试效果如下：
 
+./build.sh -G Magisk-FRPC
+
 ![](https://raw.githubusercontent.com/hubhike/Magisk-FRPC/main/help/2405645629.png)
 
 ## Uninstall && Clear
