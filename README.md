@@ -63,11 +63,14 @@ The traditional direct zip package construction method is not feasible, so I wro
 https://github.com/hubhike/Magisk-FRPC/raw/main/help/build.sh
 
 拉取项目：最好在/tmp目录运行，不然可能无法运行
-cd /tmp
+cd /tmp/
 git clone --depth=1 https://ghproxy.com/https://github.com/hubhike/Magisk-FRPC
 
 然后再使用上述脚本帮助来构建 ZIP 文件，测试效果如下：
+apk add zip（alpine linux可选）
+cd /tmp/
 ls
+chmod +x build.sh
 ./build.sh -G Magisk-FRPC
 
 ![](https://raw.githubusercontent.com/hubhike/Magisk-FRPC/main/help/2405645629.png)
