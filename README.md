@@ -17,7 +17,7 @@ After the module is installed, please browse and edit the frpc.ini configuration
 
 ---
 
-==模块安装完成后，请到 Android/frpc 目录下浏览并编辑 frpc.ini 配置文件文件。然后重启设备，设备运行后，会在你的设备上运行 FRPC 守护程序。==
+模块安装完成后，请到 Android/frpc 目录下浏览并编辑 frpc.ini 配置文件文件。然后重启设备，设备运行后，会在你的设备上运行 FRPC 守护程序。
 
 ## About
 
@@ -62,12 +62,12 @@ The traditional direct zip package construction method is not feasible, so I wro
 脚本代码如下：
 https://github.com/hubhike/Magisk-FRPC/raw/main/help/build.sh
 
-拉取项目：
-
+拉取项目：最好在/tmp目录运行，不然可能无法运行
+cd /tmp
 git clone --depth=1 https://ghproxy.com/https://github.com/hubhike/Magisk-FRPC
 
 然后再使用上述脚本帮助来构建 ZIP 文件，测试效果如下：
-
+ls
 ./build.sh -G Magisk-FRPC
 
 ![](https://raw.githubusercontent.com/hubhike/Magisk-FRPC/main/help/2405645629.png)
