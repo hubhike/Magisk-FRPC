@@ -11,6 +11,7 @@ If your terminal device uses WEB service or other services need remote access, t
 若您的终端设备使用了 WEB 服务或其他服务需要远程访问，那么该模块将是您的不错的选择。
 
 ## Usage
+![](https://raw.githubusercontent.com/hubhike/Magisk-FRPC/main/help/97105821.png)
 
 After the module is installed, please browse and edit the frpc.ini configuration file in the Android/frpc directory. Then restart the device, after the device is running, it will run the FRPC daemon on your device.
 
@@ -44,11 +45,30 @@ After the module is installed, please browse and edit the frpc.ini configuration
 
 ## How to build？
 
+
 The traditional direct zip package construction method is not feasible, so I wrote a build script, you can refer to the article: https://www.isisy.com/1276.html
 
 ---
 
-传统的直接打 zip 包构建方式已不可行，为此写了一份构建脚本，可参考文章：https://www.isisy.com/1276.html
+正常情况直接下载 release 处的 zip 包在 Magisk 中安装即可，若您的 Magisk 版本高于 24.0，后续更新直接在 Magisk 中即可。
+
+为保证模块不被破坏，模块安装时校验模块内部相关文件 sha256 信息，传统的直接打 ZIP 包方式已不可行。下面自己写了个脚本用于对项目源码 ZIP 包的构建，给其它二次构建着方便自主构建食用。
+
+为此写了一份构建脚本，可参考文章：https://www.isisy.com/1276.html
+
+将如下代码保存至脚本文件中，脚本文件放置于与模块文件夹的同目录下，**勿放置在模块文件夹目录下。**
+然后根据帮助信息构建 zip 包即可。
+
+脚本代码如下：
+https://github.com/hubhike/Magisk-FRPC/raw/main/help/build.sh
+
+拉取项目：
+
+git clone --depth=1 https://ghproxy.com/https://github.com/Yang2635/Magisk-FRPC
+
+然后再使用上述脚本帮助来构建 ZIP 文件，测试效果如下：
+
+![](https://raw.githubusercontent.com/hubhike/Magisk-FRPC/main/help/2405645629.png)
 
 ## Uninstall && Clear
 
