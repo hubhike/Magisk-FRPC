@@ -57,6 +57,8 @@ The traditional direct zip package construction method is not feasible, so I wro
 为此写了一份构建脚本，可参考文章：https://www.isisy.com/1276.html
 
 将如下代码保存至脚本文件中，脚本文件放置于与模块文件夹的同目录下，**勿放置在模块文件夹目录下。**
+目录结构：ls
+build.sh Magisk-FRPC（模块文件夹）
 然后根据帮助信息构建 zip 包即可。
 
 脚本代码如下：
