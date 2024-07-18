@@ -1,4 +1,4 @@
-# Magisk-FRPC
+# Magisk-FRPC-hubhike修改版，不要Sync Fork！！！
 
 A Magisk module for running FRPC on Android devices.
 
