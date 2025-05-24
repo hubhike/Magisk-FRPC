@@ -61,19 +61,43 @@ The traditional direct zip package construction method is not feasible, so I wro
 build.sh Magisk-FRPC（模块文件夹）
 然后根据帮助信息构建 zip 包即可。
 
-脚本代码如下：
-https://github.com/hubhike/Magisk-FRPC/raw/main/help/build.sh
+构建ZIP脚本代码如下：
+https://raw.github.com/hubhike/Magisk-FRPC/main/help/build_zip.sh
 
-拉取项目：最好在/tmp目录运行，不然可能无法运行
-cd /tmp/
-git clone --depth=1 https://ghproxy.com/https://github.com/hubhike/Magisk-FRPC
+### ｄｅｂｉａｎ环境中构建步骤：
 
-然后再使用上述脚本帮助来构建 ZIP 文件，测试效果如下：
-apk add zip（alpine linux可选）
+> 0、说明
+> 安装 dos2unix（报错，系统中没有就安装）
+> Ubuntu/Debian：
+> apt-get install dos2unix
+
+> 转换脚本格式
+> dos2unix ./build_zip.sh
+>
+> 安装ZIP（报错，系统中没有就安装）
+> apt-get install zip
+
+1、建立个临时目录，进入临时目录
+
 cd /tmp/
-ls
-chmod +x build.sh
+
+２、下载构建脚本
+
+wget https://raw.github.com/hubhike/Magisk-FRPC/main/help/build_zip.sh
+
+给脚本权限：chmod +x ./build_zip.sh
+
+３、拉取项目
+
+git clone --depth=1 https://github.com/hubhike/Magisk-FRPC
+
+４、运行构建命令
+
 ./build.sh -G Magisk-FRPC
+
+５、说明：build_zip.sh和 Magisk-FRPC 在同一目录，build_zip.sh不在目录Magisk-FRPC。
+
+效果图：
 
 ![](https://raw.githubusercontent.com/hubhike/Magisk-FRPC/main/help/2405645629.png)
 
