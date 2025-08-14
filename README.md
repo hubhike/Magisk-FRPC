@@ -93,7 +93,7 @@ git clone --depth=1 https://github.com/hubhike/Magisk-FRPC
 
 ４、运行构建命令
 
-./build.sh -G Magisk-FRPC
+./build_zip.sh -G Magisk-FRPC
 
 ５、说明：build_zip.sh和 Magisk-FRPC 在同一目录，build_zip.sh不在目录Magisk-FRPC。
 
